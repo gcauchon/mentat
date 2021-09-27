@@ -32,14 +32,14 @@ defmodule Mentat.MixProject do
 
   defp deps do
     [
-      {:telemetry, "~> 0.4"},
-      {:norm, "~> 0.12"},
+      {:telemetry, "~> 0.4 or ~> 1.0"},
+      {:norm, "~> 0.13"},
       {:oath, "~> 0.1"},
 
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
       {:dialyxir, "~> 1.1", only: [:dev, :test], runtime: false},
-      {:ex_doc, "~> 0.19", only: [:dev, :test]},
-      {:propcheck, "~> 1.3", only: [:dev, :test]},
+      {:ex_doc, "~> 0.25", only: [:dev, :test]},
+      {:propcheck, "~> 1.4", only: [:dev, :test]},
     ]
   end
 
